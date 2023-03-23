@@ -3,7 +3,7 @@
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   background-color: #fff;
-  color: #2f2f37;
+  color: #a317d1;
   max-width: 960px;
   padding: 16px;
 }
@@ -12,16 +12,14 @@
   font-family: monospace;
   font-size: 16px;
   font-weight: 700;
-  background-color: #ff6b0a;
+  background-color: #0affce;
   color: #fff;
   padding: 2px 6px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .example .background {
   height: 240px;
-  // ❗️❗️❗️ The path to images from a SASS file
-  // is always the same as from the css folder.
   background-image: url('../images/logo.png');
   background-size: cover;
   background-position: center;
