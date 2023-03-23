@@ -1,7 +1,4 @@
 .gallery{
-    // position: fixed;
-    // top: 0;
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -13,7 +10,7 @@
 
 .load-more{
     margin: 0 auto;
-    color: darkcyan;
+    color: blue;
     border-radius: 2px;
     border: inherit;
     padding: 5px;
@@ -33,7 +30,6 @@ img{
 .photo{
     min-width: 270px;
     height: 250px;
-    // overflow: hidden;
 }
 
 .photo-link{
@@ -47,7 +43,6 @@ img{
     padding: 10px 10px;
     display: flex;
     justify-content: space-around;
-    // align-items: center;
     gap: 10px;
     color: black;
     font-weight: 500;
