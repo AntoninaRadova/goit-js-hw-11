@@ -47,7 +47,7 @@ async function pixabayAPI(name, page) {
 
     const options = {
         params: { 
-            key: '31760233-da36889e6feb9e4679dfb5488',
+            key: '34681876',
             q: name, 
             image_type: 'photo',
             orientation: 'horizontal',
