@@ -23,6 +23,7 @@ img{
     height: 100%;
     object-fit: cover;
 }
+
 .photo-card{
     width: 270px;
 }
@@ -44,7 +45,7 @@ img{
     display: flex;
     justify-content: space-around;
     gap: 10px;
-    color: black;
+    color: gray;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
