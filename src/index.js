@@ -37,7 +37,7 @@ function onSearch(evt) {
     } else { 
         refs.loadMore.style.display = 'none';
         return Notify.failure(
-            'Не знайдено.'
+            'Sorry, there are no images matching your search query. Please try again.'
         );
     }
 }
@@ -113,18 +113,18 @@ function createMarkup(arr) {
 function message(length, isVisible, per_page, total) { 
     if (!length) { 
         Notify.failure(
-            'Не знайдено.'
+            'Sorry, there are no images matching your search query. Please try again.'
         );
     }
     if (length >= isVisible) { 
         refs.loadMore.style.display = 'flex';
         Notify.info(
-            `Знайдено ${total} зображення.`
+            `Hooray! We found ${total} images.`
         );
     }
     if (isVisible >= total) { 
         Notify.info(
-            "Ви досягли кінця результатів пошуку."
+            "We're sorry, but you've reached the end of search results."
         );
         refs.loadMore.style.display = 'none';
     }
