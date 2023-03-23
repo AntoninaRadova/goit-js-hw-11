@@ -24,7 +24,6 @@ function onLoadMore() {
     refs.loadMore.style.display = 'flex';
 }
 
-
 refs.form.querySelector('input');
 function onSearch(evt) { 
     evt.preventDefault();
@@ -38,7 +37,7 @@ function onSearch(evt) {
     } else { 
         refs.loadMore.style.display = 'none';
         return Notify.failure(
-            'Sorry, there are no images matching your search query. Please try again.'
+            'Не знайдено.'
         );
     }
 }
@@ -80,7 +79,6 @@ const simpleLightBox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
-
 function createMarkup(arr) { 
     const markup = arr.hits.map(item =>
         `<a class="photo-link" href="${item.largeImageURL}">
@@ -112,22 +110,21 @@ function createMarkup(arr) {
     simpleLightBox.refresh();
 }
 
-
 function message(length, isVisible, per_page, total) { 
     if (!length) { 
         Notify.failure(
-            'Sorry, there are no images matching your search query. Please try again.'
+            'Не знайдено.'
         );
     }
     if (length >= isVisible) { 
         refs.loadMore.style.display = 'flex';
         Notify.info(
-            `Hooray! We found ${total} images.`
+            `Знайдено ${total} зображення.`
         );
     }
     if (isVisible >= total) { 
         Notify.info(
-            "We're sorry, but you've reached the end of search results."
+            "Ви досягли кінця результатів пошуку."
         );
         refs.loadMore.style.display = 'none';
     }
